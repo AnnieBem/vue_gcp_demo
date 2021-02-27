@@ -4,7 +4,7 @@ steps:
   entrypoint: bash
   args:
   - 'c'
-  - | -
+  - |-
     npm install -g @vue/cli && npm run build
 - name: "gcr.io/cloud-builders/gcloud"
   dir: "web/sample"
