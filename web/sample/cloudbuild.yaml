@@ -5,7 +5,7 @@ steps:
   args:
   - '-c'
   - |-
-    npm install -g @vue/cli && npm run build
+    npm run build
 - name: "gcr.io/cloud-builders/gcloud"
   dir: "web/sample"
   args: ["app", "deploy"]
