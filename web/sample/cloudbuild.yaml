@@ -1,9 +1,9 @@
 steps:
 - name: gcr.io/myfirstproject-304920/npm-test
   dir: "web/sample"
-  entrypoint: bash
+  entrypoint: 'bash'
   args:
-  - 'c'
+  - '-c'
   - |-
     npm install -g @vue/cli && npm run build
 - name: "gcr.io/cloud-builders/gcloud"
